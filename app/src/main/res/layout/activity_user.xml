@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Уникальный ID сотрудника"
+        android:inputType="number"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Имя сотрудника"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:id="@+id/editManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Менеджер"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Зарплата"
+        android:inputType="number"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:id="@+id/editUnitNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Номер подразделения"
+        android:inputType="number"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:id="@+id/editNameOfUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Название подразделения"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:id="@+id/editCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Город нахождения отдела"
+        android:textSize="10pt"
+        />
+
+    <EditText
+        android:id="@+id/editETC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Разряд ETC"
+        android:inputType="number"
+        android:textSize="10pt"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/save"
+            android:onClick="save"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="Сохранить"
+            android:textSize="7pt"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            android:onClick="delete"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:textSize="7pt"
+            android:text="Удалить"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
